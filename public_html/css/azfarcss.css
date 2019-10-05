@@ -35,7 +35,7 @@ and open the template in the editor.
 {
     display: none;
 }
-#editRow1, #editRow2, #editRow3, #editRow4
+#editRow1, #editRow2, #editRow3
 {
     justify-content: center;
     margin-bottom: 80px;
