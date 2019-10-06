@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Clinic X home</title>
+        <link href="css/patient_profile.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body style="height:1500px">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-xs-center" id="navbarTogglerDemo01">
+                    <a class="navbar-brand text-white" href="index.html" >Clinic X</a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="location.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#loginModal" role="button" data-toggle="modal">Logout</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mr-auto my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav> 
+        </header>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2 bg-light">
+                    <div class="profile"> 
+                        <img src="images/wenlong.jpg" alt=""> 
+                    </div>
+                    <div class="content">
+                        <ul class="profileContent">
+                            <li> Loh Wan Loong</li>
+                            <li> Weight : 95kg </li>
+                            <li> Height : 170cm </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md bg-light">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#home">Book appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#menu1">Change appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#menu2">View Past Appointments</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active"><br>
+                            <h3>Book Appointment</h3>
+                           <form>
+                               <div class="form-group">
+                                   <label for="appointmentType">Type of Appointment</label> 
+                                   <div>
+                                       <select id="appointmentType" name="appointmentType" class="custom-select" required="required">
+                                           <option value="Geriatric Care">Geriatric Care</option>
+                                           <option value="Minor Surgery">Minor Surgery</option>
+                                           <option value="Vaccination">Vaccination</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="symptom">Please provide a brief description of your medical condition or symptoms. *</label> 
+                                   <textarea id="symptom" name="symptom" cols="40" rows="4" required="required" class="form-control"></textarea>
+                               </div>
+                               <div class="form-group">
+                                   <label for="allergies">Type of Allergies</label> 
+                                   <div>
+                                       <select id="allergies" name="allergies" required="required" class="custom-select">
+                                           <option value="Drug Allergy">Drug Allergy</option>
+                                           <option value="Food Allergy">Food Allergy</option>
+                                           <option value="Insect Allergy">Insect Allergy</option>
+                                           <option value="Latex Allergy">Latex Allergy</option>
+                                           <option value="Mold Allergy">Mold Allergy</option>
+                                           <option value="Pet Allergy">Pet Allergy</option>
+                                           <option value="Pollen Allergy">Pollen Allergy</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="textarea">Brief description of allergies</label> 
+                                   <textarea id="textarea" name="textarea" cols="40" rows="2" required="required" class="form-control"></textarea>
+                               </div>
+                               <div class="form-group">
+                                   <label for="timeslot">Available timeslot</label> 
+                                   <div>
+                                       <select id="timeslot" name="timeslot" required="required" class="custom-select">
+                                           <option value="">10:00am</option>
+                                           <option value="">11:00am</option>
+                                           <option value="">12:00pm</option>
+                                       </select>
+                                   </div>
+                               </div> 
+                               
+                               
+                               <div class="form-group">
+                                   <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                               </div>
+                           </form>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade"><br>
+                            <h3>Change appointment</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="appointmentType">Your current appointment</label> 
+                                    <div>
+                                        <select id="appointmentType" name="appointmentType" class="custom-select" required="required">
+                                            <option value="Geriatric Care">Geriatric Care</option>
+                                            <option value="Minor Surgery">Minor Surgery</option>
+                                            <option value="Vaccination">Vaccination</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dayOfTheWeek">Day of the week</label> 
+                                    <div>
+                                        <select id="dayOfTheWeek" name="dayOfTheWeek" class="custom-select">
+                                            <option value="Monday">Monday</option>
+                                            <option value="Tueday">Tueday</option>
+                                            <option value="Wednesday">Wednesday</option>
+                                            <option value="Thursday">Thursday</option>
+                                            <option value="Friday">Friday</option>
+                                            <option value="Saturday">Saturday</option>
+                                            <option value="Sunday">Sunday</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timeslot">Available timeslot</label> 
+                                    <div>
+                                        <select id="timeslot" name="timeslot" required="required" class="custom-select">
+                                            <option value="">10:00am</option>
+                                            <option value="">11:00am</option>
+                                            <option value="">12:00pm</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="form-group">
+                                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade"><br>
+                            <h3>Past appointments</h3>
+                           <table class="table table-striped">
+                               <thead>
+                                   <tr>
+                                       <th scope="col">Name</th>
+                                       <th scope="col">Appointment type</th>
+                                       <th scope="col">Appointment date</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       
+                                       <td>Loh Wan Loong</td>
+                                       <td>Minor Surgery</td>
+                                       <td>21-10-2019</td>
+                                   </tr>
+                                   <tr>
+                                      
+                                        <td>Loh Wan Loong</td>
+                                       <td>Vaccination</td>
+                                       <td>23-10-2019</td>
+                                   </tr>
+                                   <tr>
+                                      
+                                       <td>Loh Wan Loong</td>
+                                       <td>Vaccination</td>
+                                       <td>21-11-2019</td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-2 bg-light">
+                    3 of 3
+                </div>
+            <!-- Tab panes --
+   
+ 
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function (position) {
+                // callback every position change
+                console.log(position);
+            }
+        });
+
+        $("#btnLogin").click(function (event) {
+
+            //Fetch form to apply custom Bootstrap validation
+            var form = $("#formLogin")
+
+            if (form[0].checkValidity() === false) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            form.addClass('was-validated');
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
