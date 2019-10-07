@@ -14,19 +14,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <title>Locations - Clinic X</title>
-        <style>
-            .nav-pills .nav-link.active{
-                background-color: grey;
-                color: white;
-            }
-            .nav-pills .nav-link{
-                color:grey;
-            }
-            #map{
-                height: 400px;
-                width: 100%;
-            }
-        </style>
+
 
     </head>
     <body>
@@ -103,19 +91,7 @@ and open the template in the editor.
                 <div class="col-lg-1 mb-4">
                 </div>
                 <div class="col-lg-8 mb-4" id="map" style="border-radius: 5px;">
-                    <script>
-                        // Initialize and add the map
-                        function initMap() {
-                            // The location of Uluru
-                            var cmpb = {lat: 1.280195, lng: 103.815126};
-                            // The map, centered at Uluru
-                            var sg = {lat: 1.3471785, lng: 103.8167864};
-                            var map = new google.maps.Map(
-                            document.getElementById('map'), {zoom: 11, center: sg});
-                        // The marker, positioned at Uluru
-                            var marker = new google.maps.Marker({position: cmpb, map: map});
-                        }
-                    </script>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0976755899915!2d103.81295770392477!3d1.2804595777328907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1bd0af54732f%3A0x9c274decbab4e599!2sCMPB!5e0!3m2!1sen!2ssg!4v1570429232493!5m2!1sen!2ssg" width="900" height="370" frameborder="0" style="border:0; border-radius: 4px;" allowfullscreen=""></iframe>
                 </div>
                 <div class="col-lg-3 mb-4">
                     <h3>Contact</h3>
