@@ -7,7 +7,7 @@ and open the template in the editor.
 
 */
 
-.content 
+.signupContent
 {
     margin-left: 170px;
     text-align: left;
@@ -24,12 +24,22 @@ and open the template in the editor.
 }
 .row
 {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 .btnCfm
 {
     float: right;
     margin-right: 210px;
+}
+#btnUpdate, #btnCancel
+{
+    display: none;
+}
+#editRow1, #editRow2, #editRow3
+{
+    justify-content: center;
+    margin-bottom: 80px;
+    text-align: center;
 }
 .form-check-label
 {
