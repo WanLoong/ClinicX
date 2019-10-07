@@ -12,6 +12,11 @@ and open the template in the editor.
     margin-left: 170px;
     text-align: left;
 }
+#patientField
+{
+    margin-left: 390px;
+    text-align: left;
+}
 .h1signUp
 {
     margin-bottom: 50px;
@@ -31,15 +36,13 @@ and open the template in the editor.
     float: right;
     margin-right: 210px;
 }
+#btnEdit
+{
+    margin-top: 30px;
+}
 #btnUpdate, #btnCancel
 {
     display: none;
-}
-#editRow1, #editRow2, #editRow3
-{
-    justify-content: center;
-    margin-bottom: 80px;
-    text-align: center;
 }
 .form-check-label
 {
