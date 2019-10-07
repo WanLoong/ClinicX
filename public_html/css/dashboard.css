@@ -37,8 +37,7 @@ body {
   position: sticky;
   top: 48px; /* Height of navbar */
   height: calc(100vh - 48px);
-  padding-top: .5rem;
-  overflow-x: hidden;
+  padding-top: 3em;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
@@ -94,6 +93,7 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+
 
 /*
  * Utilities
