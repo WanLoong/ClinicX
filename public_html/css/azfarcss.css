@@ -21,15 +21,25 @@ and open the template in the editor.
 {
     margin-bottom: 50px;
 }
+#docName
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
 .details
 {
     margin-top: 80px;
     margin-bottom: 30px;
     font-weight: lighter;
 }
+#docApptTitle
+{
+    font-weight: lighter;
+}
 .row
 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 .btnCfm
 {
@@ -43,8 +53,17 @@ and open the template in the editor.
 #btnUpdate, #btnCancel
 {
     display: none;
+    margin-top: 30px;
+}
+#btnDocApptDetail
+{
+    text-align: center;
 }
 .form-check-label
 {
     margin-right: 200px;
+}
+.docDetailLabel
+{
+    font-weight: bold;
 }
