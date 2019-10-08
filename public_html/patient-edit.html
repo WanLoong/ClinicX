@@ -12,7 +12,8 @@ and open the template in the editor.
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/azfarcss.css"/>
-
+        <link href="css/transitions.css" rel="stylesheet">
+        
         <title>Edit Details</title>
 
     </head>
@@ -46,7 +47,7 @@ and open the template in the editor.
                 </div>
             </nav> 
         </header>
-
+        <main class="fade-in">
         <article class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center rellax" data-rellax-speed="7">
             <h1 class="h1signUp display-4">Edit Patient Details</h1>
             <form>
@@ -113,7 +114,7 @@ and open the template in the editor.
             <button type="reset" class="btn btn-outline-danger" id="btnCancel" onclick="cancel()">Cancel</button>
             <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Launch demo modal</button> -->
         </article>
-
+        </main>
         <!-- Popup message to enter patient unique details and confirm update of particulars -->
         <div class="modal fade" id="updateDetails" tabindex="-1" role="dialog" aria-labelledby="updateDetailsTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
