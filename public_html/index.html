@@ -9,19 +9,19 @@ and open the template in the editor.
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- Bootstrap CSS -->
+        <meta name="author" content="Group P5-8">
+        <meta name="description" content="A fuss free online booking service for clinicX, book your next appointment here">
+        <meta name="keywords" content="clinic booking,clinic appointment, book appointment, safe surgery, sick clinic, sick, book doctor, doctor">
+        <meta name="robots" content="index, follow">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
         <title>Clinic X home</title>
         <link href="css/carousel.css" rel="stylesheet"> 
-        <link href="css/transitions.css" rel="stylesheet"> 
+        <link href="css/transitions.css" rel="stylesheet">  
         <style>
             .shading {
                 box-shadow: 0 10px 20px 0px rgba(0,0,0, .17)
             }
         </style>
-
     </head>
 
     <body style="height:1500px">
@@ -139,9 +139,6 @@ and open the template in the editor.
         </div>
 
 
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
 
         <div class="container marketing">
 
@@ -150,32 +147,31 @@ and open the template in the editor.
             </div>
 
             <hr class="featurette-divider">
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
+            <article class="row">
                 <div class="col-lg-4">
                     <img class="rounded-circle shading" src="images/harold.jpeg" alt="Harold" width="140" height="140">
                     <h2>Geriatric Care</h2>
                     <p>The continuity of family care is our priority. Older patients can rely on us for elderly-specific medical needs.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button" data-toggle="modal" data-target="#myModal">Learn More &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="#geriatric" role="button">Learn More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle shading" src="images/surgery.gif" alt="Intense Surgery" width="140" height="140">
                     <h2>Minor Surgery</h2>
                     <p>With our highly-skilled doctors trained on hundred of hours of surgeon simulator, you can rest assured you're in safe hands.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Learn More &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="#surgery" role="button">Learn More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle shading" src="images/vaxed.PNG" alt="Guy feeling the pain" width="140" height="140">
                     <h2>Vaccination</h2>
                     <p>We provide all kinds of vaccination services. Rest assured that none of them cause autism, that's just some pseudo scientific woo woo.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Learn More &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="#vaccination" role="button">Learn More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-            <!-- START THE FEATURETTES -->
+            </article><!-- /.row -->
+
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <article class="row featurette" id="geriatric">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Geriatric Care. <span class="text-muted">The best in the business.</span></h2>
                     <p class="lead">Geriatric means old people. Most old people are nice. Nice people are delightful to work with and we love working with them. Some old people are not that nice, however. Whatever the case, we'll be sure to provide top-notch geriatric care, whoever you are, however nice you may be to us.</p>
@@ -183,11 +179,11 @@ and open the template in the editor.
                 <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto shading" src="images/scooterrace.jpg" alt="Old people having fun" style="border-radius: 4px;">
                 </div>
-            </div>
+            </article>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <article class="row featurette" id="surgery">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading">Minor Procedures. <span class="text-muted">Skilled surgeons.</span></h2>
                     <p class="lead">Our surgeons are so professional, so good, that you won't even remember you went for surgery until we send you the invoice. Cyst removal? Stitching? You name it, we have it.</p>
@@ -195,11 +191,11 @@ and open the template in the editor.
                 <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto shading" src="images/vrsurgeon.jpg" alt="Surgeon performing surgery" style="border-radius: 4px;">
                 </div>
-            </div>
+            </article>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <article class="row featurette" id="vaccination">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Vaccinations. <span class="text-muted">Safe and fun.</span></h2>
                     <p class="lead">Love needles? Hate smallpox and polio? Then you're in the right place. We only use the best FDA-approved ingredients to protect you and your love ones from scary viruses. </p>
@@ -207,62 +203,27 @@ and open the template in the editor.
                 <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto shading" src="images/virus.jpg" alt="Angery Virus" style="border-radius: 4px;">
                 </div>
-            </div>
+            </article>
 
-            <!-- The Modal -->
-            <div class="modal fade" id="myModal">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Geriatric Care</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Our geriatric care caters to the health needs of our senior and elderly patients. Some of the geriatric syndromes we manage include dementia, difficulties in walking, frequent falls, memory loss, incontinence and others.
-                            All Pioneer Generation (PG) and Community Health Assist Scheme (CHAS) cardholders can enjoy subsidised medical care at all My Family Clinic outlets.
-                            Our geriatric care services include, but are not limited to:
-                            <ul>
-                                <li>Chronic disease management</li>
-                                <li>Dementia</li>
-                                <li>Incontinence</li>
-                                <li>Joint and bone care</li>
-                            </ul>
-
-
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            
 
             <hr class="featurette-divider">
 
-            <!-- /END THE FEATURETTES -->
 
-        </div><!-- /.container -->
+        </div>
 
         </main>
-        <!-- FOOTER -->
+
         <footer class="container">
             <p class="float-right"><a href="#">Back to top</a></p>
             <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
         <script type="text/javascript" src="rellax.js"></script>
         <script>
             var rellax = new Rellax('.rellax', {
-                // center: true
+
                 callback: function (position) {
                     // callback every position change
                     console.log(position);
@@ -271,7 +232,7 @@ and open the template in the editor.
 
             $("#btnLogin").click(function (event) {
 
-                //Fetch form to apply custom Bootstrap validation
+ 
                 var form = $("#formLogin")
 
                 if (form[0].checkValidity() === false) {
